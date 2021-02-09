@@ -29,8 +29,8 @@ difference(){
 // 13 cross pattern separately
 difference(){
     for(i=[-s: dist13: s], j=[-s: dist13: s]){
-        translate([0, j, 0]) cube([2*s, 0.5, 0.2], $fn=15, true);
-        translate([i, 0, 0]) cube([0.5, 120, 0.2], $fn=15, true);
+        translate([0, j, 0]) cube([2*s, 0.5, 0.2], true);
+        translate([i, 0, 0]) cube([0.5, 120, 0.2], true);
     };
     for(i=[-s: dist13: s], j=[-s: dist13: s])
     translate([i, j, 0]) cube(2, true);
@@ -39,8 +39,8 @@ difference(){
 // 9 cross pattern separately
 difference(){
     for(i=[-s: dist9: s], j=[-s: dist9: s]){
-        translate([0, j, 0]) cube([2*s, 0.5, 0.2], $fn=15, true);
-        translate([i, 0, 0]) cube([0.5, 120, 0.2], $fn=15, true);
+        translate([0, j, 0]) cube([2*s, 0.5, 0.2], true);
+        translate([i, 0, 0]) cube([0.5, 120, 0.2], true);
     };
     for(i=[-s: dist9: s], j=[-s: dist9: s])
     translate([i, j, 0]) cube(2, true);
