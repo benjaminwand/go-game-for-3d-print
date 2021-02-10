@@ -8,7 +8,7 @@ s = dist13 * 6;     // half size for pattern
 s2 = dist13 * 6.5;  // half board size
 dist9 = dist13 * 1.5;   // distance between stones of 9x9 field
 drawer_height = pin + minW;
-height = drawer_height + 6; 
+height = drawer_height + 5.5; 
 drawer_width = 11 * dist13 - 5;
 
 /*
@@ -126,7 +126,7 @@ module handle() translate([dist13 * 5.5, 0, drawer_height/2+3])rotate([90, 0, 0]
 module drawer() 
     difference(){
         union(){
-            translate([2.5, drawer_width / -2, 3]) 
+            translate([2.5, drawer_width / -2, 2.75]) 
                 cube([dist13*6, drawer_width, drawer_height], false);
             handle();
         }
