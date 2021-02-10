@@ -117,7 +117,8 @@ module shape2d() hull() {
     translate([dist13 - 0.3, 0]) square([0.1, height], true);
     };
     
-module handle() translate([dist13 * 5.5, 0, drawer_height/2+3])rotate([90, 0, 0])
+module handle() 
+    translate([dist13 * 5.5, 0, drawer_height/2+2.75]) rotate([90, 0, 0])
     intersection(){
         linear_extrude(2, center = true) shape2d();
         cube([3*dist13, pin + minW, pin + minW], true);
