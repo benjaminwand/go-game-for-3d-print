@@ -1,10 +1,13 @@
-dist13 = 10.5;  // distance between stones of 13x13 field
-dist9 = dist13 * 1.5;
-s = dist13 * 6; // half size
+// variables
 pin = 9;        // vertical space pin needs in box
 pin2 = 7;       // actual length of pin
+dist13 = 10.5;  // distance between stones of 13x13 field
 minW = 1.5;     // least wall thickness
-height = pin + 3* minW + 1.8;
+
+// proportions, don't touch!
+dist9 = dist13 * 1.5;
+s = dist13 * 6; // half size
+height = pin + 3* minW + 1.3;
 
 /*
 Print go board and drawers seperately.
@@ -24,9 +27,9 @@ difference(){
     13er_cross();
     9er_cross();
     translate([1.5 + dist13*4, 0, 0]) 
-        cube([dist13*8, dist13*11 + 1, pin + minW + 1], true);
+        cube([dist13*8, dist13*11 + 0.5, pin + minW + 0.5], true);
     translate([-dist13*4 -1.5, 0, 0]) 
-        cube([dist13*8, dist13*11 + 1, pin + minW + 1], true);
+        cube([dist13*8, dist13*11 + 0.5, pin + minW + 0.5], true);
 };
 
 // drawers
