@@ -121,7 +121,7 @@ module handle()
     translate([dist13 * 5.5, 0, drawer_height/2+2.75]) rotate([90, 0, 0])
     intersection(){
         linear_extrude(2, center = true) shape2d();
-        cube([3*dist13, pin + minW, pin + minW], true);
+        cube([3*dist13, drawer_height, drawer_height], true);
     };
     
 module drawer() 
