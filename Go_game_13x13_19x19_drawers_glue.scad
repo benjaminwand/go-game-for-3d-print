@@ -1,3 +1,15 @@
+/*
+Go game 13x13 and 19x19, with drawers. Both sides of the game 
+are to be printed separately and to be glued together
+
+Alternatively, the cross pattern can be printed under the matching part 
+or 19er_cross/3er_cross can be enabled. 
+
+How to get the decorative pattern onto boards:
+https://www.youtube.com/watch?v=YVKqZ20nSNI
+*/
+
+
 // variables, to be changed
 dist19 = 10.5;      // distance between stones of 13x13 field
 pin = 9;            // vertical space pin needs in box
@@ -10,16 +22,6 @@ dist13 = dist19 * 1.5;   // distance between stones of 9x9 field
 drawer_height = pin + minW;
 height = drawer_height + 5.5; 
 drawer_width = 17 * dist19 - 5;
-
-/*
-Print each of the following parts separately.
-
-Alternatively the cross pattern can be printed under the matching part 
-or 19er_cross/3er_cross can be enabled. 
-
-How to get the decorative pattern onto boards:
-https://www.youtube.com/watch?v=YVKqZ20nSNI
-*/
 
 // 19 side of board
 difference(){
